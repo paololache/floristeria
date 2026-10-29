@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amancay Floristería | Flores a domicilio en Lima</title>
+  <meta name="description" content="Amancay Floristería: rosas, lirios, orquídeas, arreglos florales y regalos con peluche. Delivery el mismo día en Lima.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <p>🚚 Delivery el mismo día en Lima · Envío gratis desde S/ 250 · Usa <strong>AMANCAY10</strong> y obtén 10% de descuento</p>
+  </div>
+
+  <!-- Navegación -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Amancay Floristería, inicio">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <g fill="currentColor">
+            <path d="M20 4c3 5 3 10 0 15-3-5-3-10 0-15z"/>
+            <path d="M20 19c5-3 10-3 15 0-5 3-10 3-15 0z" opacity=".75"/>
+            <path d="M20 19c-5-3-10-3-15 0 5 3 10 3 15 0z" opacity=".75"/>
+            <path d="M20 19c4 1 7 5 8 10-4-1-7-5-8-10z" opacity=".55"/>
+            <path d="M20 19c-4 1-7 5-8 10 4-1 7-5 8-10z" opacity=".55"/>
+            <rect x="19.2" y="24" width="1.6" height="12" rx=".8"/>
+          </g>
+        </svg>
+        <span><strong>Amancay</strong><small>Floristería</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ocasiones">Ocasiones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn cart-btn" id="cartOpen" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: carrusel de destacados -->
+    <section class="hero" id="inicio" aria-roledescription="carrusel" aria-label="Productos destacados">
+      <div class="hero__track" id="heroTrack"></div>
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <div class="hero__dots" id="heroDots" role="tablist"></div>
+      <div class="hero__progress"><span id="heroProgress"></span></div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="perks">
+      <div class="container perks__grid">
+        <div class="perk"><span>🌷</span><div><strong>Flores frescas</strong><p>Recibidas cada mañana</p></div></div>
+        <div class="perk"><span>🛵</span><div><strong>Entrega en 3 horas</strong><p>En Lima Metropolitana</p></div></div>
+        <div class="perk"><span>💳</span><div><strong>Paga como quieras</strong><p>Yape, Plin, tarjeta</p></div></div>
+        <div class="perk"><span>💌</span><div><strong>Tarjeta gratis</strong><p>Con tu dedicatoria</p></div></div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="about section" id="nosotros">
+      <div class="container about__grid">
+        <div class="about__media">
+          <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=900&q=80" alt="Interior de la floristería con flores frescas" loading="lazy">
+          <img class="about__media-small" src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=500&q=80" alt="Ramo de flores de estación" loading="lazy">
+          <div class="about__badge"><strong>15+</strong><span>años floreciendo<br>en Lima</span></div>
+        </div>
+        <div class="about__text">
+          <span class="eyebrow">Sobre nosotros</span>
+          <h2>Flores con alma limeña desde 2010</h2>
+          <p class="lead">Amancay nació en un pequeño puesto de Miraflores con una idea sencilla: que cada flor entregada lleve una emoción intacta.</p>
+          <p>Tomamos nuestro nombre del amancay, la flor amarilla que cada invierno cubre las lomas de Lima. Como ella, creemos que la belleza aparece donde se cuida con dedicación. Trabajamos con productores de Cajamarca, Huaraz y Arequipa, y con flores importadas de calidad exportación, para que cada arreglo luzca fresco por más días.</p>
+          <p>Hoy somos un equipo de 18 floristas y repartidores que diseñan, arman y entregan a mano cada pedido: desde una rosa única hasta la decoración completa de una boda.</p>
+          <ul class="about__stats">
+            <li><strong data-count="48000">0</strong><span>pedidos entregados</span></li>
+            <li><strong data-count="4.9" data-decimals="1">0</strong><span>valoración promedio</span></li>
+            <li><strong data-count="43">0</strong><span>distritos con delivery</span></li>
+          </ul>
+          <div class="about__values">
+            <div><h3>Misión</h3><p>Convertir emociones en flores, con diseño cuidado y entregas puntuales.</p></div>
+            <div><h3>Visión</h3><p>Ser la floristería de referencia en el Perú por calidad, creatividad y servicio.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ocasiones -->
+    <section class="occasions section section--tint" id="ocasiones">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Compra por ocasión</span>
+          <h2>Un detalle para cada momento</h2>
+        </div>
+        <div class="occasions__grid" id="occasionsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="catalog section" id="catalogo">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Nuestra tienda</span>
+          <h2>Catálogo de flores y regalos</h2>
+          <p>Elige, personaliza tu dedicatoria y recíbelo hoy mismo.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="chips" id="filters" role="tablist" aria-label="Categorías"></div>
+          <div class="toolbar__right">
+            <label class="search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+              <input type="search" id="search" placeholder="Buscar flores…" aria-label="Buscar productos">
+            </label>
+            <select id="sort" aria-label="Ordenar">
+              <option value="default">Recomendados</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+              <option value="name">Nombre A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="results" id="results"></p>
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials section section--dark">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <span class="eyebrow">Testimonios</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="testimonials__grid">
+          <blockquote><p>“Pedí un ramo a las 10 a. m. y a la 1 p. m. ya estaba en la oficina de mi esposa. Las rosas duraron más de una semana.”</p><cite>Carlos M. · San Isidro</cite></blockquote>
+          <blockquote><p>“Hicieron el bouquet y los centros de mesa de mi boda. Todo quedó exactamente como lo soñamos.”</p><cite>Andrea P. · Surco</cite></blockquote>
+          <blockquote><p>“El arreglo con peluche fue un éxito para el cumpleaños de mi hija. Atención rapidísima por WhatsApp.”</p><cite>Lucía R. · La Molina</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact section" id="contacto">
+      <div class="container contact__grid">
+        <div>
+          <span class="eyebrow">Contacto</span>
+          <h2>Visítanos o escríbenos</h2>
+          <ul class="contact__list">
+            <li><strong>Tienda</strong>Av. José Larco 845, Miraflores, Lima</li>
+            <li><strong>Horario</strong>Lunes a sábado 8:00 a. m. – 9:00 p. m. · Domingos 9:00 a. m. – 3:00 p. m.</li>
+            <li><strong>WhatsApp</strong>+51 987 654 321</li>
+            <li><strong>Correo</strong>pedidos@amancayfloristeria.pe</li>
+          </ul>
+        </div>
+        <form class="newsletter" id="newsletter">
+          <h3>Recibe ofertas por fechas especiales</h3>
+          <p>San Valentín, Día de la Madre, Navidad… te avisamos antes que a nadie.</p>
+          <div class="newsletter__row">
+            <input type="email" required placeholder="tu@correo.com" aria-label="Correo electrónico">
+            <button class="btn btn--primary" type="submit">Suscribirme</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Amancay Floristería S.A.C. · RUC 20601234567 · Lima, Perú</p>
+      <p>Precios en soles, IGV incluido.</p>
+    </div>
+  </footer>
+
+  <!-- Carrito -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cart" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="drawer__head">
+      <h2>Tu carrito</h2>
+      <button class="icon-btn" id="cartClose" aria-label="Cerrar carrito"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="drawer__body" id="cartBody"></div>
+    <div class="drawer__foot" id="cartFoot">
+      <div class="free-bar" id="freeBar"></div>
+      <label class="field">
+        <span>Entrega</span>
+        <select id="zone"></select>
+      </label>
+      <dl class="totals">
+        <div><dt>Subtotal</dt><dd id="subtotal">S/ 0.00</dd></div>
+        <div class="discount" id="discountRow" hidden><dt id="discountLabel">Descuento</dt><dd id="discount"></dd></div>
+        <div><dt>Delivery</dt><dd id="deliveryCost">S/ 0.00</dd></div>
+        <div class="totals__grand"><dt>Total</dt><dd id="grandTotal">S/ 0.00</dd></div>
+      </dl>
+      <div class="drawer__btns">
+        <button class="btn btn--outline" id="viewCartBtn">Ver carrito</button>
+        <button class="btn btn--primary" id="checkoutBtn">Finalizar compra</button>
+      </div>
+      <button class="link-btn" id="clearCart">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <!-- Checkout: Carrito → Entrega → Pago -->
+  <div class="co" id="checkout" role="dialog" aria-modal="true" aria-label="Proceso de compra" hidden>
+    <header class="co__header">
+      <div class="container co__header-inner">
+        <button class="logo" data-co="close" aria-label="Volver a la tienda">
+          <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+            <g fill="currentColor">
+              <path d="M20 4c3 5 3 10 0 15-3-5-3-10 0-15z"/>
+              <path d="M20 19c5-3 10-3 15 0-5 3-10 3-15 0z" opacity=".75"/>
+              <path d="M20 19c-5-3-10-3-15 0 5 3 10 3 15 0z" opacity=".75"/>
+              <path d="M20 19c4 1 7 5 8 10-4-1-7-5-8-10z" opacity=".55"/>
+              <path d="M20 19c-4 1-7 5-8 10 4-1 7-5 8-10z" opacity=".55"/>
+              <rect x="19.2" y="24" width="1.6" height="12" rx=".8"/>
+            </g>
+          </svg>
+          <span><strong>Amancay</strong><small>Floristería</small></span>
+        </button>
+        <ol class="steps" id="steps">
+          <li data-step="1"><span>1</span>Carrito</li>
+          <li data-step="2"><span>2</span>Entrega</li>
+          <li data-step="3"><span>3</span>Pago</li>
+        </ol>
+        <button class="link-back" data-co="close">← Seguir comprando</button>
+      </div>
+    </header>
+    <div class="container co__body">
+      <div class="co__main" id="coMain"></div>
+      <aside class="co__aside" id="coAside"></aside>
+    </div>
+  </div>
+
+  <!-- Modal de producto -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" hidden>
+    <div class="modal__card" id="modalCard"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
